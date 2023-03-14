@@ -1,0 +1,15 @@
+b = int(input("Money "))
+tkb = 5.6
+skb = 5.9
+vtb = 4.28
+sber = 4.0
+
+pertkb = round((b/100)*tkb, 1)
+perskb = round((b/100)*skb, 1)
+pervtb = round((b/100)*vtb, 1)
+persber = round((b/100)*sber, 1)
+
+per_cent = {'ТКБ': pertkb, 'СКБ': perskb, 'ВТБ': pervtb, 'СБЕР': persber}
+
+print('deposit = ', list(per_cent.values()))
+print('Максимальная сумма, которую вы можете заработать - ', max(per_cent.values()))
